@@ -1,12 +1,24 @@
 
+# - name: variables
+#   hosts: localhost
+#   vars: #variable declaration
+#    course: "Ansible"
+#    Trainer: "Sivakumar"
+#    Duration: "120hrs"
+
+#    tasks:
+#    - name: print information
+#      ansible.builtin.debug:
+#       msg: "Hi, we are learning {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}"
+
+
 - name: variables
   hosts: localhost
   vars: #variable declaration
-   course: "Ansible"
-   Trainer: "Sivakumar"
-   Duration: "120hrs"
-
-   tasks:
-   - name: print information
-     ansible.builtin.debug:
-      msg: "Hi, we are learning {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}"
+    Course: "Terraform"
+    Trainer: "Siva"
+    Duration: "15hrs"
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."

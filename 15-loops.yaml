@@ -2,8 +2,8 @@
   hosts: localhost
   tasks:
   - name: print names
-    ansible.buitlin.debug:
-     msg: " Hello {{item}} "  # here item is reserved keyword
+    ansible.builtin.debug:
+      msg: "Hello {{item}} "
     loop:
     - linux
     - shell

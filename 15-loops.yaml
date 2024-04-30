@@ -3,7 +3,7 @@
   tasks:
   - name: print names
     ansible.buitlin.debug:
-      msg: " Hello {{item}} "  # here item is reserved keyword
+     msg: " Hello {{item}} "  # here item is reserved keyword
     loop:
     - linux
     - shell
